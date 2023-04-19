@@ -1,0 +1,323 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+body,
+html {
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #252b42;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1076px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.none {
+  display: none;
+}
+
+/* Header */
+
+.header__row {
+  padding: 36px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.1px;
+  color: inherit;
+}
+
+.header__nav {
+  margin-left: 133px;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  font-weight: 600;
+  line-height: 171%;
+}
+
+.list-item + .list-item {
+  margin-left: 21px;
+}
+
+.item-link {
+  color: #737373;
+
+  transition: color 0.2s ease-in;
+}
+
+.item-link:hover {
+  color: #ff7b47;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.hero__column {
+  max-width: 400px;
+  padding: 184px 0 191px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__column > *:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.hero__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 137%;
+  letter-spacing: 0.2px;
+}
+
+.hero__text {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.hero__buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  padding: 10px 36px;
+
+  border-radius: 37px;
+
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.hero__btn + .hero__btn {
+  margin-left: 10px;
+}
+
+.btn-active {
+  background-color: #ff7b47;
+  color: #ffffff;
+}
+
+.btn-more {
+  color: #0d5c63;
+  border: 1px solid #0d5c63;
+}
+
+.hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Cards */
+
+.services {
+  position: relative;
+  z-index: 2;
+  margin-top: -111px;
+}
+
+.services__row {
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: -30px;
+}
+
+.services__card {
+  padding: 35px 40px;
+  margin-bottom: 30px;
+  flex: 0 1 33.333%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.services__card > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.1px;
+}
+
+.card__text {
+  line-height: 142%;
+}
+
+.services__card-active {
+  background-color: #0d5c63;
+  color: #ffffff;
+}
+
+/* Experience */
+
+.experience {
+  padding: 80px 0;
+}
+
+.experience__content {
+  max-width: 609px;
+  margin: 0 auto 50px;
+}
+
+.experience__content > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.content {
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.description {
+  color: #737373;
+  line-height: 142%;
+}
+
+.experience__row {
+  gap: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__card {
+  min-height: 209px;
+  padding: 30px;
+  flex: 0 1 25%;
+
+  background-color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.experience__card > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.experience__card-number {
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+}
+
+.experience__card-desc {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #737373;
+}
+
+/* Advice */
+
+.advice {
+  padding: 32px 0 80px;
+  margin-bottom: 49px;
+}
+
+.advice__heading {
+  padding: 45px 0;
+}
+
+.advice__heading > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.advice__row {
+  gap: 30px;
+}
+
+.advice__card {
+  min-height: 341px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 25%;
+
+  background-color: #ffffff;
+}
+
+.advice__card-content {
+  padding: 30px;
+  flex: 1 1 auto;
+}
+
+.advice__card-link {
+  color: inherit;
+}
+
+.advice__card-title {
+  max-width: 135px;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.advice__card-text {
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}

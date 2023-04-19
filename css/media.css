@@ -1,0 +1,91 @@
+@media (max-width: 1300px) {
+  .hero__img img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__nav {
+    margin-left: 80px;
+  }
+
+  .hero__column {
+    padding: 120px 0 191px 0;
+  }
+
+  .hero__img img {
+    opacity: 0.5;
+  }
+
+  .services__row {
+    flex-direction: column;
+  }
+
+  .services__card {
+    text-align: center;
+  }
+
+  .experience__card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__nav {
+    margin-left: 40px;
+  }
+
+  .experience__card {
+    flex: 1 1 50%;
+  }
+
+  .experience__row {
+    flex-wrap: wrap;
+  }
+
+  .advice__row {
+    flex-wrap: wrap;
+  }
+
+  .advice__card {
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 479px) {
+  .list-item {
+    font-size: 18px;
+  }
+
+  .hero__title {
+    font-size: 42px;
+  }
+
+  .hero__btn {
+    margin: 10px 0;
+    flex: 1 1 auto;
+  }
+
+  .services__card {
+    padding: 20px;
+  }
+
+  .experience__card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+  .hero__btn + .hero__btn {
+    margin: 0;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .advice__card {
+    align-items: center;
+  }
+}
